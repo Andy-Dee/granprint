@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Print</title> 
+
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet"> 
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js""></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>  
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header" class="container-fluid header-wrap">
+    <nav class="container navbar navbar-default header">      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <div class="top-contacts">
+            <div class="city">
+              <img src="img/location-pin.png">
+              <a href="#"><p>Москва</p></a>
+            </div>
+            <div class="phone">
+              <img src="img/telephone.png">
+              <p>+7 (952) 374-19-21</p>
+            </div>
+          </div>
+        </div> 
+        <div class="navbar-collapse collapse" id="myNavbar">          
+          <ul class="nav navbar-nav navbar-right menu">          
+            <li><a href="#about">Гарантии</a></li>
+            <li><a href="#tariffs">Каталог</a></li>
+            <li><a href="#delete">Доставка и оплата</a></li>
+            <li><a href="#howitwork">Контакты</a></li>     
+          </ul> 
+        </div>
+    </nav>
+</div>
+<!-- Head second row -->
+<div class="container second-row">
+  <div class="logo">
+    <a href="#"><img src="img/logo.png"></a>
+  </div>
+  <div class="search">
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control main-search" placeholder="Найти...">
+      </div>
+      <a href="№"><img src="img/search.png" alt="#"></a>
+    </form>
+  </div>
+  <div class="basket">
+      <div class="basket-item">
+        <img src="img/bascket.png">
+      </div>
+      <div class="basket-item">
+        <a href="#"><p>Корзина</p></a>
+        <a href="#"><p>15 000 р.</p></a>
+      </div>
+  </div>
+  <div class="favorites">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><p>Избранное</p></a>
+      <ul class="dropdown-menu favorites-list">
+        <div class="arrow"></div>
+        <li><a href="#">Любимое (<span>10</span>)</a></li>
+        <li><a href="#">Подарок на день рожденья (<span>10</span>)</a></li>
+        <li><a href="#">Подарок на день рожденья (<span>10</span>)</a></li>
+        <li>
+          <form>
+            <input type="text" class="new-favorites-list" name="new-list" placeholder="Создать новый список">
+          </form>
+        </li>
+      </ul>
+  </div>
+  <div class="enter">
+    <a href="#"><p>Войти</p></a>
+  </div>
+</div>
+<!-- Menu category -->
+<div class="container-fluid menu-category-wrap">
+  <div class="container menu-category">
+    <ul>
+      <li class="all"><a href="#">Все категории</a><img src="img/left-arrow.png"></li>
+      <li><a href="#">Фотообои</a></li>
+      <li><a href="#">Картины</a></li>
+      <li><a href="#">Карты и постеры</a></li>
+      <li><a href="#">Фрески</a></li>
+      <li><a href="#">Футболки</a></li>
+      <li><a href="#">Сувениры</a></li>
+      <li><a href="#">Для Бизнеса</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Inner zone -->
+<div class="container-fluid inner-zone">
+    <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li class="active">Каталог по направлениям</li>
+        </ol>
+    </div>
+    <!-- Goods map -->
+    <div class="container">
+       <div class="map-wrap">
+        <div class="product-custom">
+             <h1> Футболка Покемон Гоу (Pokemon Go)</h1>
+             <ul class="nav nav-pills regime-extended">
+               <li class="active">
+                 <a href="#image" data-toggle="pill">Мои картинки</a>
+               </li>
+               <li>
+                 <a href="#text" data-toggle="pill">Текст</a>
+               </li>
+               <li>
+                 <a href="#icon" data-toggle="pill">Клипарт</a>
+               </li>
+               <li>
+                 <a href="#color" data-toggle="pill">Цвет</a>
+               </li>
+             </ul>
+             <div class="tab-content">
+               <div id="image" class="tab-pane fade in active">
+                 <p class="color-select-caption">Щелкните на картинку, чтоб добавить ее на предмет</p>
+                 <div class="image-select">
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/city-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/city-nice-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/table-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/nature-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/table-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/city-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/nature-mini.png"></a>
+                   </div>
+                   <div class="image-select-item">
+                     <a href="#"><img src="img/add.png"></a>
+                   </div>
+                 </div>
+               </div>
+               <div id="text" class="tab-pane fade">
+                 <div class="add-text">
+                   <textarea placeholder="Введите текст..."></textarea>
+                   <div class="add-text-control">
+                     <img src="img/add-text-control.png">
+                   </div>
+                 </div>
+               </div>
+               <div id="icon" class="tab-pane fade">
+                  <p class="color-select-caption">Щелкните на картинку, чтоб добавить ее на предмет</p>
+                   <div class="add-color-item">
+                     <p>Выбор цвета:</p>
+                     <img src="img/add-color.jpg">
+                   </div>
+                   <div class="add-color-item">
+                     <p>Прозрачность:</p>
+                     <img src="img/add-opacity.jpg">
+                   </div>
+                 <div class="image-select">
+                   <div class="image-select-item">
+                    <div>
+                      <a href="#"><img class="img-icon" src="img/icon-prize.png"></a>
+                    </div>
+                    <div class="icon-txt">
+                      <p>Иконка “Приз”</p>
+                    </div>
+                   </div>
+                   <div class="image-select-item">
+                     <div>
+                       <a href="#"><img class="img-icon" src="img/icon-sber.png"></a>
+                     </div>
+                     <div class="icon-txt">
+                       <p>Иконка “Сбербанк”</p>
+                     </div>
+                   </div>
+                   <div class="image-select-item">
+                     
+                   </div>
+                   <div class="image-select-item">
+                     
+                   </div>
+                   <div class="image-select-item">
+                     
+                   </div>
+                   <div class="image-select-item">
+                    
+                   </div>
+                   <div class="image-select-item">
+                     
+                   </div>  
+                   <div class="image-select-item">
+                     
+                   </div>                  
+                 </div>
+               </div>
+               <div id="color" class="tab-pane fade">
+                 <div class="add-color">
+                   <div class="add-color-item">
+                     <p>Выбор цвета:</p>
+                     <img src="img/add-color.jpg">
+                   </div>
+                   <div class="color-select">
+                     <a href="#"><img src="img/col-white.png"></a>
+                     <a href="#"><img src="img/col-grey.png"></a>
+                     <a href="#"><img src="img/col-black.png"></a>
+                     <a href="#"><img src="img/col-yellow.png"></a>
+                     <a href="#"><img src="img/col-green.png"></a>
+                     <a href="#"><img src="img/col-red.png"></a>
+                     <a href="#"><img src="img/col-orange.png"></a>
+                     <a href="#"><img src="img/col-blue.png"></a>             
+                   </div>
+                 </div>
+               </div>
+               <div class="other-products">
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>
+                 <div class="other-products-item text-center">
+                   <img src="img/other-product.png">
+                   <p>Футболка Покемон гоу</p>
+                 </div>                 
+               </div>
+               <div class="total">
+                 <h1>Итого: <span>1 600</span> руб.</h1>
+                 <p class="total-discount">(<span>- 300</span> руб скидка)</p>
+                 <button class="btn total-favorites">В избранное</button>
+                 <button class="btn total-basket">В корзину</button>
+               </div>
+             </div>            
+         </div>
+         <div class="product-view-wrap">
+           <div class="product-view">
+             <img src="img/product-view.png">
+           </div>
+           <div class="product-control">
+             <button class="btn">Вернуться к исходнику</button>
+           </div>
+           <div class="canvas-control">
+             <div class="canvas-control-item">
+               <a href="#"><img src="img/canvas-turn.png"></a>
+             </div>
+              <div class="canvas-control-item">
+               <a href="#"><img src="img/canvas-left.png"></a>
+             </div>
+              <div class="canvas-control-item">
+               <a href="#"><img src="img/canvas-right.png"></a>
+             </div>
+           </div>
+         </div>
+         <div class="product-description">
+           <p class="product-description-caption">Описание товара</p>
+           <p class="product-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+           <table class="table table-sizes">
+             <thead>
+               <tr>
+                 <th>Размеры</th>
+                 <th>S</th>
+                 <th>M</th>
+                 <th>L</th>
+                 <th>XL</th>
+                 <th>XXL</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>Российский размер</td>
+                 <td>42-44</td>
+                 <td>44-46</td>
+                 <td>46-48</td>
+                 <td>48-50</td>
+                 <td>50-52</td>
+               </tr>
+               <tr>
+                 <td>Грудь</td>
+                 <td>36</td>
+                 <td>38</td>
+                 <td>40</td>
+                 <td>42</td>
+                 <td>44</td>
+               </tr>
+               <tr>
+                 <td>Длина</td>
+                 <td>58</td>
+                 <td>60</td>
+                 <td>62</td>
+                 <td>64</td>
+                 <td>66</td>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+         <div class="review">
+           <h3>Отзывы о товаре <span>(12)</span></h3>
+           <div class="review-item">
+             <div class="col-md-1 col-sm-2">
+               <img src="img/avatar-review.png">
+             </div>
+             <div class="col-md-11 col-sm-10">
+              <p class="author">Мария Петрова</p>
+              <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+              </p>
+             </div>           
+           </div>
+           <div class="review-item">
+             <div class="col-md-1 col-sm-2">
+               <img src="img/avatar-review.png">
+             </div>
+             <div class="col-md-11 col-sm-10">
+              <p class="author">Мария Петрова</p>
+              <p class="review-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+             </div>           
+           </div>
+         </div>       
+      </div>     
+    </div>
+</div>
+<footer>
+  <div class="container-fluid footer-catalog-wrap">
+    <div class="container footer-catalog">
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Фотообои</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов по направлению</p></a>
+        <a href="#"><p>Специалисты-поклейщики</p></a>
+      </div>      
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Карты и постеры</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+        <a href="#"><p>Каталог подрамников</p></a>
+        <a href="#"><p>Каталог рам</p></a>
+        <a href="#"><p>Варианты натяжки</p></a>
+      </div>
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Фрески</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+        <a href="#"><p>Специалисты-поклейщики</p></a>
+      </div>
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Сувениры</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+      </div>
+      <div class="col-sm-9 col-xs-12 footer-catalog-item">
+        <h3>Футболки</h3>
+        <div class="col-sm-4 col-xs-4 t-shirt">
+          <a href="#"><p>Каталог дизайнов по направлению</p></a>
+          <a href="#"><p>Каталог одежды</p></a>
+          <a href="#"><p>Мужские футболки</p></a>
+          <a href="#"><p>Женские футболки</p></a>
+        </div>
+        <div class="col-sm-4 col-xs-4 t-shirt t-shirt-2">
+          <a href="#"><p>Футболки с полной запечаткой</p></a>
+          <a href="#"><p>Свитшоты</p></a>
+          <a href="#"><p>Мужские поло</p></a>
+          <a href="#"><p>Женские поло</p></a>
+        </div>
+        <div class="col-sm-4 col-xs-4 t-shirt t-shirt-3">
+          <a href="#"><p>Головные уборы</p></a>
+          <a href="#"><p>Толстовки</p></a>
+          <a href="#"><p>Лонгсливы</p></a>
+          <a href="#"><p>Майки</p></a>
+        </div>
+      </div>      
+      <div class="col-sm-3 col-xs-12 footer-catalog-item">
+        <h3>Для бизнеса</h3>
+        <a href="#"><h3>Баннеры</h3></a>
+        <a href="#"><h3>Плакаты</h3></a>
+        <a href="#"><h3>Афиши</h3></a>
+        <a href="#"><h3>Визитки</h3></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer-info-wrap">
+    <div class="container footer-info">
+      <div class="col-sm-5 footer-info-item">
+        <h5>Доставка</h5>
+        <p>Доставка: Москва, Санкт-Петербург, Новосибирск, Екатеринбург, Нижний Новгород, Казань, Самара, Челябинск, Омск, Ростов-на-Дону, Уфа, Красноярск, Пермь, Волгоград, Воронеж.</p>
+        <div class="social">
+          <a href="#"><img src="img/vk.png"></a>
+          <a href="#"><img src="img/facebook.png"></a>
+          <a href="#"><img src="img/ok.png"></a>
+          <a href="#"><img src="img/twitter.png"></a>
+          <a href="#"><img src="img/google.png"></a>
+        </div>
+        <div class="line-grey"></div>
+      </div>
+      <div class="col-sm-3 footer-info-item">
+        <h5>Контакты</h5>
+        <p>Адрес местонахождения:  г.Выборг,<br> ул. Первомайская, д.7<br>
+        (81378) 2-81-33</p>
+        <a href="mailto:makton@mail.ru">makton@mail.ru</a>
+      </div>
+      <div class="col-sm-4 footer-info-item">
+        <form class="subs-form">
+          <div class="form-group">
+            <input type="text" class="form-control subs" placeholder="Введите вашу эл.почту">
+          </div>
+          <a href="№"><img src="img/subs.png" alt="#"></a>
+        </form>
+        <div class="subs-sign">
+          <p>Получайте обновления любимого<br>магазина или товара!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="footer-menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Авторские права</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 payments">
+          <img src="img/visa.png">
+          <img src="img/mastercard.png">
+          <img src="img/yandex-dengi.png">
+          <img src="img/wmlogo.png">
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  <div class="container-fluid footer-bottom-wrap">
+    <div class="container footer-bottom">
+      <div class="col-sm-4">
+        <a href="#"><img src="img/logo-footer.png"></a>
+      </div>
+      <div class="col-sm-4">
+        <p>© 2016 Интернет-магазин фотообоев Granprint.ru</p>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript"> 
+  $(document).ready(function() { 
+    $('a.fancy').fancybox(); 
+  }); 
+</script> 
+<!-- Modals-->
+
+</body>

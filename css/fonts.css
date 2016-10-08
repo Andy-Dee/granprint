@@ -1,0 +1,25 @@
+@font-face {
+	font-family: Black;
+	src: url('../fonts/MuseoSansBlack.ttf');
+	src: url('../fonts/MuseoSansBlack.otf');
+}
+@font-face {
+	font-family: Bold;
+	src: url('../fonts/MuseoSansBold.ttf');
+	src: url('../fonts/MuseoSansBold.otf');
+}
+@font-face {
+	font-family: Medium;
+	src: url('../fonts/MuseoSansMedium.ttf');
+	src: url('../fonts/MuseoSansMedium.otf');
+}
+@font-face {
+	font-family: Italic;
+	src: url('../fonts/MuseoSansMediumItalic.ttf');
+	src: url('../fonts/MuseoSansMediumItalic.otf');
+}
+@font-face {
+	font-family: Regular;
+	src: url('../fonts/MuseoSansRegular.ttf');
+	src: url('../fonts/MuseoSansRegular.otf');
+}

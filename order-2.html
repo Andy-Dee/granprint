@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Print</title> 
+
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet"> 
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js""></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>  
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header" class="container-fluid header-wrap">
+    <nav class="container navbar navbar-default header">      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <div class="top-contacts">
+            <div class="city">
+              <img src="img/location-pin.png">
+              <a href="#"><p>Москва</p></a>
+            </div>
+            <div class="phone">
+              <img src="img/telephone.png">
+              <p>+7 (952) 374-19-21</p>
+            </div>
+          </div>
+        </div> 
+        <div class="navbar-collapse collapse" id="myNavbar">          
+          <ul class="nav navbar-nav navbar-right menu">          
+            <li><a href="#about">Гарантии</a></li>
+            <li><a href="#tariffs">Каталог</a></li>
+            <li><a href="#delete">Доставка и оплата</a></li>
+            <li><a href="#howitwork">Контакты</a></li>     
+          </ul> 
+        </div>
+    </nav>
+</div>
+<!-- Head second row -->
+<div class="container second-row">
+  <div class="logo">
+    <a href="#"><img src="img/logo.png"></a>
+  </div>
+  <div class="search">
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control main-search" placeholder="Найти...">
+      </div>
+      <a href="№"><img src="img/search.png" alt="#"></a>
+    </form>
+  </div>
+  <div class="basket">
+      <div class="basket-item">
+        <img src="img/bascket.png">
+      </div>
+      <div class="basket-item">
+        <a href="#"><p>Корзина</p></a>
+        <a href="#"><p>15 000 р.</p></a>
+      </div>
+  </div>
+  <div class="favorites">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><p>Избранное</p></a>
+      <ul class="dropdown-menu favorites-list">
+        <div class="arrow"></div>
+        <li><a href="#">Любимое (<span>10</span>)</a></li>
+        <li><a href="#">Подарок на день рожденья (<span>10</span>)</a></li>
+        <li><a href="#">Подарок на день рожденья (<span>10</span>)</a></li>
+        <li>
+          <form>
+            <input type="text" class="new-favorites-list" name="new-list" placeholder="Создать новый список">
+          </form>
+        </li>
+      </ul>
+  </div>
+  <div class="enter">
+    <a href="#"><p>Войти</p></a>
+  </div>
+</div>
+<!-- Menu category -->
+<div class="container-fluid menu-category-wrap">
+  <div class="container menu-category">
+    <ul>
+      <li class="all"><a href="#">Все категории</a><img src="img/left-arrow.png"></li>
+      <li><a href="#">Фотообои</a></li>
+      <li><a href="#">Картины</a></li>
+      <li><a href="#">Карты и постеры</a></li>
+      <li><a href="#">Фрески</a></li>
+      <li><a href="#">Футболки</a></li>
+      <li><a href="#">Сувениры</a></li>
+      <li><a href="#">Для Бизнеса</a></li>
+    </ul>
+  </div>
+</div>
+<!-- Inner zone -->
+<div class="container-fluid inner-zone inner-zone-white">
+    <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li class="active">Каталог по направлениям</li>
+        </ol>
+    </div>
+    <!-- Order -->
+    <div class="container">
+       <div class="col-md-8 col-sm-7 order-zone">
+        <h1>Оформление заказа</h1>
+         <div class="steps-control">
+             <div class="step-1">
+                <img src="img/step-one.png">
+                <p class="step">Оформление заказа</p>                 
+             </div>
+             <div class="step-2">
+                <img src="img/step-two-active.png">
+                <p class="step-active">Платёж</p>
+                <img src="img/step-arrow.png">
+             </div>
+             <div class="step-3">
+                <img src="img/step-three.png">
+                <p class="step">Готово</p>
+             </div>
+         </div> 
+         <div class="col-md-7 col-sm-12 form-order">
+             <p>Оплата товара:</p>
+             <form>
+                <input type="text" class="form-order-item" name="order-item" placeholder="Номер карты">                
+                <input type="text" class="form-order-item" name="order-item" placeholder="Имя и фамилия">
+                <p class="param">Срок действия:</p>
+                <div class="term">
+                    <input type="text" class="form-order-item mini" name="order-item" placeholder="XX"><br>
+                    <input type="text" class="form-order-item mini" name="order-item" placeholder="XX"><br>
+                </div>
+                <p class="param">Код CVV2:</p>
+                <input type="text" class="form-order-item mini" name="order-item" placeholder="XXX"><br>
+                <button class="btn order-btn">Завершить платеж</button>
+             </form>
+         </div> 
+         <div class="col-md-5 col-sm-12 payments">
+             <img src="img/visa.png">
+             <img src="img/mastercard.png">
+             <img src="img/yandex-dengi.png">
+             <img src="img/wmlogo.png">
+         </div>
+       </div> 
+       <div class="col-md-4 col-sm-5 goods-zone">
+            <div class="col-sm-4 order-item">
+            <a href=""><h3>Современный город</h3></a>
+            <img src="img/city.png">
+            <div class="order-describe">
+              <div class="col-sm-7">
+                <p class="price">10000 ₽</p>
+                <p>Город, закат, здания</p>
+                <p>от <a href="#">nickname</a></p>
+              </div>              
+            </div>            
+          </div>
+       </div> 
+    </div>
+</div>
+<footer>
+  <div class="container-fluid footer-catalog-wrap">
+    <div class="container footer-catalog">
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Фотообои</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов по направлению</p></a>
+        <a href="#"><p>Специалисты-поклейщики</p></a>
+      </div>      
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Карты и постеры</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+        <a href="#"><p>Каталог подрамников</p></a>
+        <a href="#"><p>Каталог рам</p></a>
+        <a href="#"><p>Варианты натяжки</p></a>
+      </div>
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Фрески</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+        <a href="#"><p>Специалисты-поклейщики</p></a>
+      </div>
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Сувениры</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+      </div>
+      <div class="col-sm-9 col-xs-12 footer-catalog-item">
+        <h3>Футболки</h3>
+        <div class="col-sm-4 col-xs-4 t-shirt">
+          <a href="#"><p>Каталог дизайнов по направлению</p></a>
+          <a href="#"><p>Каталог одежды</p></a>
+          <a href="#"><p>Мужские футболки</p></a>
+          <a href="#"><p>Женские футболки</p></a>
+        </div>
+        <div class="col-sm-4 col-xs-4 t-shirt t-shirt-2">
+          <a href="#"><p>Футболки с полной запечаткой</p></a>
+          <a href="#"><p>Свитшоты</p></a>
+          <a href="#"><p>Мужские поло</p></a>
+          <a href="#"><p>Женские поло</p></a>
+        </div>
+        <div class="col-sm-4 col-xs-4 t-shirt t-shirt-3">
+          <a href="#"><p>Головные уборы</p></a>
+          <a href="#"><p>Толстовки</p></a>
+          <a href="#"><p>Лонгсливы</p></a>
+          <a href="#"><p>Майки</p></a>
+        </div>
+      </div>      
+      <div class="col-sm-3 col-xs-12 footer-catalog-item">
+        <h3>Для бизнеса</h3>
+        <a href="#"><h3>Баннеры</h3></a>
+        <a href="#"><h3>Плакаты</h3></a>
+        <a href="#"><h3>Афиши</h3></a>
+        <a href="#"><h3>Визитки</h3></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer-info-wrap">
+    <div class="container footer-info">
+      <div class="col-sm-5 footer-info-item">
+        <h5>Доставка</h5>
+        <p>Доставка: Москва, Санкт-Петербург, Новосибирск, Екатеринбург, Нижний Новгород, Казань, Самара, Челябинск, Омск, Ростов-на-Дону, Уфа, Красноярск, Пермь, Волгоград, Воронеж.</p>
+        <div class="social">
+          <a href="#"><img src="img/vk.png"></a>
+          <a href="#"><img src="img/facebook.png"></a>
+          <a href="#"><img src="img/ok.png"></a>
+          <a href="#"><img src="img/twitter.png"></a>
+          <a href="#"><img src="img/google.png"></a>
+        </div>
+        <div class="line-grey"></div>
+      </div>
+      <div class="col-sm-3 footer-info-item">
+        <h5>Контакты</h5>
+        <p>Адрес местонахождения:  г.Выборг,<br> ул. Первомайская, д.7<br>
+        (81378) 2-81-33</p>
+        <a href="mailto:makton@mail.ru">makton@mail.ru</a>
+      </div>
+      <div class="col-sm-4 footer-info-item">
+        <form class="subs-form">
+          <div class="form-group">
+            <input type="text" class="form-control subs" placeholder="Введите вашу эл.почту">
+          </div>
+          <a href="№"><img src="img/subs.png" alt="#"></a>
+        </form>
+        <div class="subs-sign">
+          <p>Получайте обновления любимого<br>магазина или товара!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="footer-menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Авторские права</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 payments">
+          <img src="img/visa.png">
+          <img src="img/mastercard.png">
+          <img src="img/yandex-dengi.png">
+          <img src="img/wmlogo.png">
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  <div class="container-fluid footer-bottom-wrap">
+    <div class="container footer-bottom">
+      <div class="col-sm-4">
+        <a href="#"><img src="img/logo-footer.png"></a>
+      </div>
+      <div class="col-sm-4">
+        <p>© 2016 Интернет-магазин фотообоев Granprint.ru</p>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript"> 
+  $(document).ready(function() { 
+    $('a.fancy').fancybox(); 
+  }); 
+</script> 
+<!-- Modals-->
+
+</body>

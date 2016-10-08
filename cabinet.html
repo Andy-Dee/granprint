@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Print</title> 
+
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" type="text/css" media="screen"/>
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet"> 
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js""></script>
+  <script src="http://code.jquery.com/jquery.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>  
+</head>
+
+<body>
+
+<!-- Header -->
+<div id="header" class="container-fluid header-wrap">
+    <nav class="container navbar navbar-default header">      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <div class="top-contacts">
+            <div class="city">
+              <img src="img/location-pin.png">
+              <a href="#"><p>Москва</p></a>
+            </div>
+            <div class="phone">
+              <img src="img/telephone.png">
+              <p>+7 (952) 374-19-21</p>
+            </div>
+          </div>
+        </div> 
+        <div class="navbar-collapse collapse" id="myNavbar">          
+          <ul class="nav navbar-nav navbar-right menu">          
+            <li><a href="#about">Гарантии</a></li>
+            <li><a href="#tariffs">Каталог</a></li>
+            <li><a href="#delete">Доставка и оплата</a></li>
+            <li><a href="#howitwork">Контакты</a></li>     
+          </ul> 
+        </div>
+    </nav>
+</div>
+<!-- Head second row -->
+<div class="container second-row">
+  <div class="logo">
+    <a href="#"><img src="img/logo.png"></a>
+  </div>
+  <div class="search">
+    <form class="navbar-form" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control main-search" placeholder="Найти...">
+      </div>
+      <a href="№"><img src="img/search.png" alt="#"></a>
+    </form>
+  </div>
+  <div class="basket">
+      <div class="basket-item">
+        <img src="img/bascket.png">
+      </div>
+      <div class="basket-item">
+        <a href="#"><p>Корзина</p></a>
+        <a href="#"><p>15 000 р.</p></a>
+      </div>
+  </div>
+  <div class="favorites">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><p>Избранное</p></a>
+      <ul class="dropdown-menu favorites-list">
+        <div class="arrow"></div>
+        <li><a href="#">Любимое (<span>10</span>)</a></li>
+        <li><a href="#">Подарок на день рожденья (<span>10</span>)</a></li>
+        <li><a href="#">Подарок на день рожденья (<span>10</span>)</a></li>
+        <li>
+          <form>
+            <input type="text" class="new-favorites-list" name="new-list" placeholder="Создать новый список">
+          </form>
+        </li>
+      </ul>
+  </div>
+  <div class="enter">
+    <a href="#"><p>Войти</p></a>
+  </div>
+</div>
+<!-- Menu category -->
+<div class="container-fluid menu-category-wrap">
+  <div class="container menu-category">
+    <ul>
+      <li class="all"><a href="#">Все категории</a><img src="img/left-arrow.png"></li>
+      <li><a href="#">Фотообои</a></li>
+      <li><a href="#">Картины</a></li>
+      <li><a href="#">Карты и постеры</a></li>
+      <li><a href="#">Фрески</a></li>
+      <li><a href="#">Футболки</a></li>
+      <li><a href="#">Сувениры</a></li>
+      <li><a href="#">Для Бизнеса</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container-fluid cabinet-top-menu-wrap">
+     <div class="container cabinet-top-menu tabs">
+       <ul class="nav nav-tabs" role="tablist">
+           <li class="to-catalog"><img src="img/cabinet-left-arrow.png"><a href="#">Перейти в каталог</a></li> 
+           <li class="active"><a href="#mygoods" aria-controls="mygoods" role="tab" data-toggle="tab">Мои товары</a></li>
+           <li><a href="#myorders" aria-controls="myorders" role="tab" data-toggle="tab">Мои заказы</a></li>
+           <li><a href="#myprofile" aria-controls="myprofile" role="tab" data-toggle="tab">Профиль</a></li>
+       </ul>
+    </div>
+</div>
+<!-- Inner zone -->
+<div class="container-fluid inner-zone"> 
+<!-- Sidebar cabinet -->
+<div class="container tab-content">   
+    <div class="tab-pane tab-pane-cabinet fade in active" role="tabpanel" id="mygoods">
+      <div class="col-md-3 col-sm-3 sidebar-cabinet">
+
+          <!-- Vertical menu -->
+          <ul class="nav-tabs nav-stacked nav cabinet-menu">
+            <li class="active"><a href="#myproduct" aria-controls="myproduct" role="tab" aria-expanded="true" data-toggle="tab">Мои товары</a></li>
+            <li><a href="#onsell-1" aria-controls="onsell" role="tab" data-toggle="tab">Выставить на продажу</a></li>
+            <li><a href="#onsell-2" aria-controls="onsell" role="tab" data-toggle="tab">Выставить на продажу</a></li>
+            <li><a href="#stat" aria-controls="stat" role="tab" data-toggle="tab">Статистика продаж</a></li>
+            <li><a href="#pays" aria-controls="pays" role="tab" data-toggle="tab">Выплаты</a></li> 
+          </ul>
+          <ul class="nav-pills nav-stacked nav cabinet-catalog-menu">
+              <li class="active">
+                  <a data-toggle="collapse" data-target="#accordion">Фотообои</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Футболки</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Картины</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Постеры</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>                     
+          </ul>    
+      </div>
+      <!-- Cabinet body -->
+      <div class="col-md-9 col-sm-9 tab-content cabinet-body">
+            <div class="tab-pane tab-pane-body fade in active" role="tabpanel" id="myproduct">
+                <div class="my-goods-control">
+                  <div class="my-goods-control-item">
+                     <a href="#"><p>Опубликованные</p></a>
+                     <div class="my-goods-control-inner"><p>30</p></div> 
+                  </div>
+                  <div class="my-goods-control-item">
+                     <a href="#"><p>Снятые с продаж</p></a>
+                     <div class="my-goods-control-inner"><p>30</p></div> 
+                  </div>
+                  <div class="my-goods-control-item">
+                     <a href="#"><p>На модерации</p></a>
+                     <div class="my-goods-control-inner"><p>30</p></div> 
+                  </div>           
+              </div>
+              <table class="table table-my-goods">
+                    <thead>
+                        <tr>
+                            <th>Дизайн</th>
+                            <th>Товар</th>
+                            <th>Цена</th>
+                            <th>Продажи</th>
+                            <th>Дата</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/my-goods.png">
+                            </td>
+                            <td>
+                                <p>I love design</p>
+                            </td>
+                            <td>
+                                <p>1500 руб.</p>
+                            </td>
+                            <td>
+                                <p>2222</p>
+                            </td>
+                            <td>
+                                <p>22.08.2016г</p>
+                            </td>
+                            <td>
+                                <select class="select-action">
+                                    <option>Действие</option>
+                                    <option>Редактировать</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/my-goods.png">
+                            </td>
+                            <td>
+                                <p>I love design</p>
+                            </td>
+                            <td>
+                                <p>1500 руб.</p>
+                            </td>
+                            <td>
+                                <p>2222</p>
+                            </td>
+                            <td>
+                                <p>22.08.2016г</p>
+                            </td>
+                            <td>
+                                <select class="select-action">
+                                    <option>Действие</option>
+                                    <option>Редактировать</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade onsell" role="tabpanel" id="onsell-1">
+              <div class="onsell-caption">
+                <h3>Выставить на продажу</h3>
+                <a href="#"><p>Как опубликовать дизайн?</p></a>
+              </div>
+              <div class="col-sm-6">
+                  <div class="main-photo">
+                      <img src="img/onsell-main.png">
+                  </div>
+                  <p class="publish-other">Опубликовать дизайн на других проектах?</p>
+                  <div class="publish-other-describe">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div class="goods-insell">
+                      <div class="goods-insell-item text-center">
+                          <div class="form-group goods-insell-caption">                
+                            <input type="checkbox" id="check-bag" name="check-bag" value="check-bag">
+                            <label class="check-goods" for="check-bag"><span></span>Сумка</label>
+                          </div>
+                          <div class="goods-photo">
+                              <img src="img/bag.png">
+                          </div>
+                          <button class="btn btn-redact-goods-blue">Редактировать</button>
+                      </div>
+                      <div class="goods-insell-item text-center">
+                          <div class="form-group goods-insell-caption">                
+                            <input type="checkbox" id="check-sweeter" name="check-sweeter" value="check-sweeter">
+                            <label class="check-goods" for="check-sweeter"><span></span>Толстовка</label>
+                          </div>
+                          <div class="goods-photo">
+                              <img src="img/tolstovka-belaja-unisex.png">
+                          </div>
+                          <button class="btn btn-redact-goods-brown">Редактировать</button>
+                      </div>
+                      <div class="goods-insell-item text-center">
+                          <div class="form-group goods-insell-caption">                
+                            <input type="checkbox" id="check-sweeter" name="check-sweeter" value="check-sweeter">
+                            <label class="check-goods" for="check-sweeter"><span></span>Футболка</label>
+                          </div>
+                          <div class="goods-photo">
+                              <img src="img/vidyi-muzhskih-futbolok-belaya-futbolka-s-v-obratnyim-vorotnikom.png">
+                          </div>
+                          <button class="btn btn-redact-goods-brown">Редактировать</button>
+                      </div>
+                      <div class="goods-insell-item text-center">
+                          <div class="form-group goods-insell-caption">                
+                            <input type="checkbox" id="check-bag" name="check-bag" value="check-bag">
+                            <label class="check-goods" for="check-bag"><span></span>Сумка</label>
+                          </div>
+                          <div class="goods-photo">
+                              <img src="img/bag.png">
+                          </div>
+                          <button class="btn btn-redact-goods-blue">Редактировать</button>
+                      </div>
+                      <div class="goods-insell-item text-center">
+                          <div class="form-group goods-insell-caption">                
+                            <input type="checkbox" id="check-sweeter" name="check-sweeter" value="check-sweeter">
+                            <label class="check-goods" for="check-sweeter"><span></span>Толстовка</label>
+                          </div>
+                          <div class="goods-photo">
+                              <img src="img/tolstovka-belaja-unisex.png">
+                          </div>
+                          <button class="btn btn-redact-goods-brown">Редактировать</button>
+                      </div>
+                      <div class="goods-insell-item text-center">
+                          <div class="form-group goods-insell-caption">                
+                            <input type="checkbox" id="check-sweeter" name="check-sweeter" value="check-sweeter">
+                            <label class="check-goods" for="check-sweeter"><span></span>Футболка</label>
+                          </div>
+                          <div class="goods-photo">
+                              <img src="img/vidyi-muzhskih-futbolok-belaya-futbolka-s-v-obratnyim-vorotnikom.png">
+                          </div>
+                          <button class="btn btn-redact-goods-brown">Редактировать</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <form class="form-onsell">
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-category">Укажите категорию вашего товара:</label>
+                          <select id="select-goods-category" class="select-goods-sell">
+                              <option>Все товары</option>
+                              <option>Футболки</option>
+                          </select>
+                      </div>
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-name">Укажите название товара:</label>
+                          <input id="select-goods-name" type="text" class="form-control input-goods-sell" placeholder="Название товара">
+                          <p class="note">Например: <span>Красивый вид города</span></p>
+                      </div>                
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-theme">Укажите тематику вашего товара:</label>
+                          <select id="select-goods-theme" class="select-goods-sell">
+                              <option>Тематика</option>
+                              <option>Абстракция</option>
+                          </select>
+                      </div>
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-name">Укажите теги:</label>
+                          <input id="select-goods-name" type="text" class="form-control input-goods-sell" placeholder="Укажите 1-5 ключевых слов">
+                          <p class="note">Например: <img src="img/tag-city.png"><img src="img/tag-house.png"></p>
+                      </div>                
+                       <div class="form-group form-group-sell">
+                          <label for="select-goods-describe">Описание вашего товара:</label>
+                          <textarea class="textarea-goods-sell" id="select-goods-describe" placeholder="Описание"></textarea>
+                      </div>
+                      <div class="form-group form-group-sell prices">
+                          <div class="col-md-5 col-sm-12 prices-item">
+                             <input id="price" type="text" class="form-control input-goods-sell input-goods-sell-mini" placeholder="Цена р."> 
+                          </div>
+                          <div class="col-md-7 col-sm-12 prices-item">
+                             <div class="profit-wrap">
+                                 <label class="profit" for="select-goods-profit">Ваша прибыль:</label>
+                                 <input id="select-goods-profit" type="text" class="form-control input-goods-sell input-goods-sell-mini" placeholder="">            
+                             </div>
+                             <div class="profit-wrap">
+                                 <label class="profit" for="select-goods-price-site">Цена на сайте:</label>
+                                 <input id="select-goods-price-site" type="text" class="form-control input-goods-sell input-goods-sell-mini" placeholder="">         
+                             </div>
+                          </div>
+                      </div>
+                      <button class="btn btn-goods-sell">Выставить на продажу</button>
+                  </form>
+              </div>
+            </div>
+            <div class="tab-pane fade onsell" role="tabpanel" id="onsell-2">
+              <div class="onsell-caption">
+                  <h3>Выставить на продажу</h3>
+                  <a href="#"><p>Как опубликовать дизайн?</p></a>
+              </div>
+              <div class="col-sm-6">
+                  <div class="main-photo">
+                      <a href="#"><img src="img/download-photo.png"></a>
+                  </div>
+                  <ul class="nav nav-pills goods-control">
+                    <li class="active"><a href="#floor" data-toggle="pill" class="btn btn-goods-control">Пол</a></li>
+                    <li><a href="#furniture" data-toggle="pill" class="btn btn-goods-control">Мебель</a></li>
+                    <li><a href="#wall" data-toggle="pill" class="btn btn-goods-control">Стены</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="floor" class="tab-pane fade in active goods-select">
+                      <div class="goods-select-item">
+                          <a href="#"><img src="img/sofa-1.png"></a>
+                      </div>
+                      <div class="goods-select-item">
+                          <a href="#"><img src="img/sofa-2.png"></a>
+                      </div>
+                      <div class="goods-select-item">
+                          <a href="#"><img src="img/sofa-3.png"></a>
+                      </div>
+                      <div class="goods-select-item">
+                          <a href="#"><img src="img/sofa-4.png"></a>
+                      </div>
+                      <div class="goods-select-item">
+                          <a href="#"><img src="img/sofa-5.png"></a>
+                      </div>
+                      <div class="goods-select-item">
+                          <a href="#"><img src="img/add-own.png"></a>
+                      </div>
+                    </div>
+                    <div id="furniture" class="tab-pane fade">
+                      
+                    </div>
+                    <div id="wall" class="tab-pane fade">
+                      
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-6">
+                  <form class="form-onsell">
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-category">Укажите категорию вашего товара:</label>
+                          <select id="select-goods-category" class="select-goods-sell">
+                              <option>Все товары</option>
+                              <option>Футболки</option>
+                          </select>
+                      </div>
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-name">Укажите название товара:</label>
+                          <input id="select-goods-name" type="text" class="form-control input-goods-sell" placeholder="Название товара">
+                          <p class="note">Например: <span>Красивый вид города</span></p>
+                      </div>                
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-theme">Укажите тематику вашего товара:</label>
+                          <select id="select-goods-theme" class="select-goods-sell">
+                              <option>Тематика</option>
+                              <option>Абстракция</option>
+                          </select>
+                      </div>
+                      <div class="form-group form-group-sell">
+                          <label for="select-goods-name">Укажите теги:</label>
+                          <input id="select-goods-name" type="text" class="form-control input-goods-sell" placeholder="Укажите 1-5 ключевых слов">
+                          <p class="note">Например: <img src="img/tag-city.png"><img src="img/tag-house.png"></p>
+                      </div>                
+                       <div class="form-group form-group-sell">
+                          <label for="select-goods-describe">Описание вашего товара:</label>
+                          <textarea class="textarea-goods-sell" id="select-goods-describe" placeholder="Описание"></textarea>
+                      </div>
+                      <div class="form-group form-group-sell prices">
+                          <div class="col-md-5 col-sm-12 prices-item">
+                             <input id="price" type="text" class="form-control input-goods-sell input-goods-sell-mini" placeholder="Цена р."> 
+                          </div>
+                          <div class="col-md-7 col-sm-12 prices-item">
+                             <div class="profit-wrap">
+                                 <label class="profit" for="select-goods-profit">Ваша прибыль:</label>
+                                 <input id="select-goods-profit" type="text" class="form-control input-goods-sell input-goods-sell-mini" placeholder="">            
+                             </div>
+                             <div class="profit-wrap">
+                                 <label class="profit" for="select-goods-price-site">Цена на сайте:</label>
+                                 <input id="select-goods-price-site" type="text" class="form-control input-goods-sell input-goods-sell-mini" placeholder="">         
+                             </div>
+                          </div>
+                      </div>
+                      <button class="btn btn-goods-sell">Выставить на продажу</button>
+                  </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="stat">
+               <table class="table table-my-statistic">            
+                  <tbody>
+                      <tr><td></td><td></td><td></td><td></td></tr>
+                      <tr>
+                          <td>
+                              <p class="statistic-amount">0</p>
+                              <p>Общаяя прибыль</p>
+                          </td>
+                          <td>
+                              <p class="statistic-amount">0</p>
+                              <p>Всего продано</p>
+                          </td>
+                          <td>
+                              <p class="statistic-amount">0</p>
+                              <p>Количество просмотров</p>
+                          </td>
+                          <td>
+                              <p class="statistic-amount">0</p>
+                              <p>Количество отзывов</p>
+                          </td>                    
+                      </tr>
+                      <tr><td></td><td></td><td></td><td></td></tr>               
+                  </tbody>
+              </table>
+            </div>
+            <div class="tab-pane fade" role="tabpanel" id="pays">
+              <div class="pays">
+                  <h3>Процент выплат с продаж. Ваш уровень - <span>5%, Начинающий</span></h3>
+                  <table class="table table-pays">
+                      <thead>
+                        <tr>
+                          <th><p>Начинающий<br> 5%</p></th>
+                          <th><p>Энергичный<br> 10%</p></th>
+                          <th><p>ПРО<br> 15%</p></th>
+                          <th><p>Гуру<br> 25%</p></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td><p>Продано 10 дизайнов и 10 дизайнов опубликовано в Printio.ru</p></td>
+                          <td><p>Продано 30 дизайнов и 5 за последний месяц</p></td>
+                          <td><p>Продано 100 дизайнов</p></td>
+                        </tr>
+                      </tbody>
+                  </table>
+                  <p>Примечание: указанные в таблице проценты применятся к базовой стоимости товаров и не влияют на процент комиссии от вашей наценки.</p>
+                  <h4>Невыплаченный баланс: <span>0</span> Р</h4>
+                  <p>Комиссия за продажу зачисляется на баланс после перехода заказа в статус "Сдан".<br>
+                  Выплаты производятся через Яндекс кошелёк.<br>
+                  Номер Яндекс кошелька</p>
+                   <form class="form-pays" role="search">
+                    <div class="form-group form-group-pays">
+                      <input type="text" class="form-control input-pays" placeholder="Введите номер кошелька">
+                      <button class="btn btn-pays">Запросить выплату</button>
+                    </div>              
+                  </form>
+              </div>
+            </div>
+      </div>
+    </div>
+    <div class="tab-pane tab-pane-cabinet" role="tabpanel" id="myorders">
+      <div class="col-md-3 col-sm-3 sidebar-cabinet">
+          <!-- Vertical menu -->
+          <ul class="nav-tabs nav-stacked nav cabinet-menu">
+            <li class="active"><a href="#basket" aria-controls="basket" role="tab" aria-expanded="true" data-toggle="tab">Корзина</li>
+            <li><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">Мои заказы</a></li>
+            <li><a href="#favorite" aria-controls="favorite" role="tab" data-toggle="tab">Избранное</a></li>
+            <li><a href="#address" aria-controls="address" role="tab" data-toggle="tab">Адрес доставки</a></li> 
+          </ul>
+          <ul class="nav-pills nav-stacked nav cabinet-catalog-menu">
+              <li class="active">
+                  <a data-toggle="collapse" data-target="#accordion1">Фотообои</a>
+                  <ul id="accordion1" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Футболки</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Картины</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Постеры</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>                     
+          </ul>    
+      </div>
+      <!-- Cabinet body -->
+      <div class="col-md-9 col-sm-9 tab-content cabinet-body">
+        <div class="tab-pane fade in active" id="basket" role="tabpanel">
+          <div class="basket-controls">
+              <p>Выбран <span>1</span> элемент:</p>
+              <a href="#"><p class="select-goods">Выделить все</p></a>
+              <a href="#"><p class="delete">Удалить</p></a>
+          </div>
+          <ul class="cabinet-basket-body desktop">
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket" name="check-basket" value="check-basket">
+                                    <label class="checkbox" for="check-basket"><span></span></label>
+                                </div>
+                            </td> 
+                            <td>
+                                <img src="img/basket-img.png">
+                            </td>
+                            <td>
+                                <a href=""><h2>#1111 невероятный вид города</h2></a>
+                                <p><b>Длина:</b> 500 см. <b>Высота:</b> 500 см. <b>Тип:</b> флизелиновые. <b>Текстура:</b> нити на холсте. <b>Дополнительно:</b> добавить по 5 см по ширине и высоте</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                            <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                              <div class="goods-count">
+                                  <span class="amount">
+                                      <span class="down"></span>
+                                      <input type="text" class="counter" value="1 шт." data-price="1000" data-count="1"/>
+                                      <span class="up"></span>
+                                  </span>
+                              </div>
+                              <button class="btn">Заказать</button>
+                              <button class="btn">Редактировать</button>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket1" name="check-basket1" value="check-basket1">
+                                    <label class="checkbox" for="check-basket1"><span></span></label>
+                                </div>
+                            </td> 
+                            <td>
+                                <div id="MyCarouselBasket" class="carousel slide" data-interval="3000" data-ride="arousel">
+                                  <div class="carousel-inner carousel-inner-basket">
+                                    <div class="active item text-center"> 
+                                      <img src="img/basket-slide.png">
+                                    </div>
+                                    <!-- №2 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                    <!-- №3 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#MyCarouselBasket" role="button" data-slide="prev">
+                                      <div class="carousel-basket-left" aria-hidden="true"></div>
+                                    </a>
+                                    <a class="right carousel-control" href="#MyCarouselBasket" role="button" data-slide="next">
+                                      <div class="carousel-basket-right" aria-hidden="true"></div>
+                                    </a> 
+                                </div>
+                            </td>
+                            <td>
+                                <a href=""><h2>№222 Футболка Покемон гоу</h2></a>
+                                <p><b>Описание:</b> Красивая, стильная футболка, женская... <b>Цвет:</b> белый. <b>Размер:</b> L.</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                            <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                              <div class="goods-count">
+                                  <span class="amount">
+                                      <span class="down"></span>
+                                      <input type="text" class="counter" value="1 шт." data-price="1000" data-count="1"/>
+                                      <span class="up"></span>
+                                  </span>
+                              </div>
+                              <button class="btn">Заказать</button>
+                              <button class="btn">Редактировать</button>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+          </ul>
+          <ul class="cabinet-basket-body laptop">
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket" name="check-basket" value="check-basket">
+                                    <label class="checkbox" for="check-basket"><span></span></label>
+                                </div>
+                            </td> 
+                            <td>
+                                <img src="img/basket-img.png">
+                            </td>
+                            <td>
+                                <a href=""><h2>#1111 невероятный вид города</h2></a>
+                                <p><b>Длина:</b> 500 см. <b>Высота:</b> 500 см. <b>Тип:</b> флизелиновые. <b>Текстура:</b> нити на холсте. <b>Дополнительно:</b> добавить по 5 см по ширине и высоте</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>   
+                         </tr>
+                         <tr>
+                            <td></td>
+                            <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                              <div class="goods-count">
+                                  <span class="amount">
+                                      <span class="down"></span>
+                                      <input type="text" class="counter" value="1 шт." data-price="1000" data-count="1"/>
+                                      <span class="up"></span>
+                                  </span>
+                              </div>
+                              <button class="btn">Заказать</button>
+                              <button class="btn">Редактировать</button>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket1" name="check-basket1" value="check-basket1">
+                                    <label class="checkbox" for="check-basket1"><span></span></label>
+                                </div>
+                            </td> 
+                            <td>
+                                <div id="MyCarouselBasket" class="carousel slide" data-interval="3000" data-ride="arousel">
+                                  <div class="carousel-inner carousel-inner-basket">
+                                    <div class="active item text-center"> 
+                                      <img src="img/basket-slide.png">
+                                    </div>
+                                    <!-- №2 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                    <!-- №3 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#MyCarouselBasket" role="button" data-slide="prev">
+                                      <div class="carousel-basket-left" aria-hidden="true"></div>
+                                    </a>
+                                    <a class="right carousel-control" href="#MyCarouselBasket" role="button" data-slide="next">
+                                      <div class="carousel-basket-right" aria-hidden="true"></div>
+                                    </a> 
+                                </div>
+                            </td>
+                            <td>
+                                <a href=""><h2>№222 Футболка Покемон гоу</h2></a>
+                                <p><b>Описание:</b> Красивая, стильная футболка, женская... <b>Цвет:</b> белый. <b>Размер:</b> L.</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td></td>
+                            <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                              <div class="goods-count">
+                                  <span class="amount">
+                                      <span class="down"></span>
+                                      <input type="text" class="counter" value="1 шт." data-price="1000" data-count="1"/>
+                                      <span class="up"></span>
+                                  </span>
+                              </div>
+                              <button class="btn">Заказать</button>
+                              <button class="btn">Редактировать</button>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+          </ul>
+          <ul class="cabinet-basket-body mobile">
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket" name="check-basket" value="check-basket">
+                                    <label class="checkbox" for="check-basket"><span></span></label>
+                                </div>
+                            </td>
+                            <td colspan="3">
+                                <img src="img/basket-img.png">
+                            </td>                                                                              
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td colspan="3">
+                                <a href=""><h2>#1111 невероятный вид города</h2></a>
+                                <p><b>Длина:</b> 500 см. <b>Высота:</b> 500 см. <b>Тип:</b> флизелиновые. <b>Текстура:</b> нити на холсте. <b>Дополнительно:</b> добавить по 5 см по ширине и высоте</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>                        
+                         </tr>
+                         <tr>
+                            <td colspan="2">
+                              <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td colspan="2">
+                              <div class="goods-count">
+                                  <span class="amount">
+                                      <span class="down"></span>
+                                      <input type="text" class="counter" value="1 шт." data-price="1000" data-count="1"/>
+                                      <span class="up"></span>
+                                  </span>
+                              </div>
+                              <button class="btn">Заказать</button>
+                              <button class="btn">Редактировать</button>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket1" name="check-basket1" value="check-basket1">
+                                    <label class="checkbox" for="check-basket1"><span></span></label>
+                                </div>
+                            </td> 
+                            <td colspan="3">
+                                <div id="MyCarouselBasket" class="carousel slide" data-interval="3000" data-ride="arousel">
+                                  <div class="carousel-inner carousel-inner-basket">
+                                    <div class="active item text-center"> 
+                                      <img src="img/basket-slide.png">
+                                    </div>
+                                    <!-- №2 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                    <!-- №3 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#MyCarouselBasket" role="button" data-slide="prev">
+                                      <div class="carousel-basket-left" aria-hidden="true"></div>
+                                    </a>
+                                    <a class="right carousel-control" href="#MyCarouselBasket" role="button" data-slide="next">
+                                      <div class="carousel-basket-right" aria-hidden="true"></div>
+                                    </a> 
+                                </div>
+                            </td>                            
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td colspan="3">
+                                <a href=""><h2>№222 Футболка Покемон гоу</h2></a>
+                                <p><b>Описание:</b> Красивая, стильная футболка, женская... <b>Цвет:</b> белый. <b>Размер:</b> L.</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td colspan="2">
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td colspan="2">
+                              <div class="goods-count">
+                                  <span class="amount">
+                                      <span class="down"></span>
+                                      <input type="text" class="counter" value="1 шт." data-price="1000" data-count="1"/>
+                                      <span class="up"></span>
+                                  </span>
+                              </div>
+                              <button class="btn">Заказать</button>
+                              <button class="btn">Редактировать</button>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="orders" role="tabpanel">
+          <ul class="cabinet-basket-body desktop">
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                               
+                            </td> 
+                            <td>
+                                <img src="img/basket-img.png">
+                            </td>
+                            <td>
+                                <a href=""><h2>#1111 невероятный вид города</h2></a>
+                                <p><b>Длина:</b> 500 см. <b>Высота:</b> 500 см. <b>Тип:</b> флизелиновые. <b>Текстура:</b> нити на холсте. <b>Дополнительно:</b> добавить по 5 см по ширине и высоте</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                            <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                                <h3>выполнен</h3>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                               
+                            </td> 
+                            <td>
+                                <div id="MyCarouselBasket" class="carousel slide" data-interval="3000" data-ride="arousel">
+                                  <div class="carousel-inner carousel-inner-basket">
+                                    <div class="active item text-center"> 
+                                      <img src="img/basket-slide.png">
+                                    </div>
+                                    <!-- №2 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                    <!-- №3 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#MyCarouselBasket" role="button" data-slide="prev">
+                                      <div class="carousel-basket-left" aria-hidden="true"></div>
+                                    </a>
+                                    <a class="right carousel-control" href="#MyCarouselBasket" role="button" data-slide="next">
+                                      <div class="carousel-basket-right" aria-hidden="true"></div>
+                                    </a> 
+                                </div>
+                            </td>
+                            <td>
+                                <a href=""><h2>№222 Футболка Покемон гоу</h2></a>
+                                <p><b>Описание:</b> Красивая, стильная футболка, женская... <b>Цвет:</b> белый. <b>Размер:</b> L.</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                            <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                              <h3>выполнен</h3>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+          </ul>
+          <ul class="cabinet-basket-body laptop">
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                               
+                            </td> 
+                            <td>
+                                <img src="img/basket-img.png">
+                            </td>
+                            <td>
+                                <a href=""><h2>#1111 невероятный вид города</h2></a>
+                                <p><b>Длина:</b> 500 см. <b>Высота:</b> 500 см. <b>Тип:</b> флизелиновые. <b>Текстура:</b> нити на холсте. <b>Дополнительно:</b> добавить по 5 см по ширине и высоте</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>                            
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                                <h3>выполнен</h3>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                               
+                            </td> 
+                            <td>
+                                <div id="MyCarouselBasket" class="carousel slide" data-interval="3000" data-ride="arousel">
+                                  <div class="carousel-inner carousel-inner-basket">
+                                    <div class="active item text-center"> 
+                                      <img src="img/basket-slide.png">
+                                    </div>
+                                    <!-- №2 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                    <!-- №3 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#MyCarouselBasket" role="button" data-slide="prev">
+                                      <div class="carousel-basket-left" aria-hidden="true"></div>
+                                    </a>
+                                    <a class="right carousel-control" href="#MyCarouselBasket" role="button" data-slide="next">
+                                      <div class="carousel-basket-right" aria-hidden="true"></div>
+                                    </a> 
+                                </div>
+                            </td>
+                            <td>
+                                <a href=""><h2>№222 Футболка Покемон гоу</h2></a>
+                                <p><b>Описание:</b> Красивая, стильная футболка, женская... <b>Цвет:</b> белый. <b>Размер:</b> L.</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>                            
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td>
+                                <p class="price">10000 ₽</p>
+                                <p class="discount">( Скидка <span>-7</span>% )</p>
+                            </td>
+                            <td>
+                                <h3>выполнен</h3>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+          </ul>
+          <ul class="cabinet-basket-body mobile">
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket" name="check-basket" value="check-basket">
+                                    <label class="checkbox" for="check-basket"><span></span></label>
+                                </div>
+                            </td>
+                            <td colspan="3">
+                                <img src="img/basket-img.png">
+                            </td>                                                                              
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td colspan="3">
+                                <a href=""><h2>#1111 невероятный вид города</h2></a>
+                                <p><b>Длина:</b> 500 см. <b>Высота:</b> 500 см. <b>Тип:</b> флизелиновые. <b>Текстура:</b> нити на холсте. <b>Дополнительно:</b> добавить по 5 см по ширине и высоте</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>                        
+                         </tr>
+                         <tr>
+                            <td colspan="4">
+                              <h3>выполнен</h3>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+            <li>
+                 <table>
+                     <tbody>
+                         <tr>
+                            <td>
+                                <div class="form-group">                
+                                    <input type="checkbox" id="check-basket1" name="check-basket1" value="check-basket1">
+                                    <label class="checkbox" for="check-basket1"><span></span></label>
+                                </div>
+                            </td> 
+                            <td colspan="3">
+                                <div id="MyCarouselBasket" class="carousel slide" data-interval="3000" data-ride="arousel">
+                                  <div class="carousel-inner carousel-inner-basket">
+                                    <div class="active item text-center"> 
+                                      <img src="img/basket-slide.png">
+                                    </div>
+                                    <!-- №2 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                    <!-- №3 -->
+                                     <div class="item">
+                                      <div class="active item text-center"> 
+                                        <img src="img/basket-slide.png">
+                                      </div>
+                                    </div>
+                                  </div> 
+                                  <!-- Left and right controls -->
+                                    <a class="left carousel-control" href="#MyCarouselBasket" role="button" data-slide="prev">
+                                      <div class="carousel-basket-left" aria-hidden="true"></div>
+                                    </a>
+                                    <a class="right carousel-control" href="#MyCarouselBasket" role="button" data-slide="next">
+                                      <div class="carousel-basket-right" aria-hidden="true"></div>
+                                    </a> 
+                                </div>
+                            </td>                            
+                         </tr>
+                         <tr>
+                           <td></td>
+                           <td colspan="3">
+                                <a href=""><h2>№222 Футболка Покемон гоу</h2></a>
+                                <p><b>Описание:</b> Красивая, стильная футболка, женская... <b>Цвет:</b> белый. <b>Размер:</b> L.</p>
+                                <p>от <a href="#">nickname</a></p>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td colspan="4">
+                              <h3>выполнен</h3>
+                            </td>
+                         </tr>
+                     </tbody>
+                 </table>
+            </li> 
+          </ul>
+        </div>        
+        <div class="tab-pane fade cabinet-favorite" id="favorite" role="tabpanel">
+          <div class="cabinet-favorite-wrapwrap">
+            <div class="cabinet-favorite-wrap">
+              <div class="col-sm-4 cabinet-favorite-item">
+                <a href=""><h3>Синее озеро</h3></a>
+                <a href=""><img src="img/lake.png"></a>
+                <div class="catalog-describe">
+                  <div class="col-sm-6 col-xs-6 catalog-describe-item">
+                    <p>Город, закат, здания</p>
+                    <p>от <a href="#">nickname</a></p>
+                  </div>
+                  <div class="col-sm-6 col-xs-6 catalog-describe-item">
+                    <p class="price">10000 ₽</p>
+                  </div>
+                  <div style="display:none;">
+                    <div class="fancy-data" id="data">
+                      <img src="img/city-night-big.png">
+                      <div class="fancy-data-describe">
+                        <div class="fancy-data-describe-inner">
+                          <div class="fancy-data-social">
+                            <a href="#"><img src="img/vk.png"></a>
+                            <a href="#"><img src="img/facebook.png"></a>
+                            <a href="#"><img src="img/google.png"></a>
+                          </div>
+                          <div class="fancy-data-btn">
+                            <button class="btn">В избранное</button>
+                            <button class="btn">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="fancy-data-describe-inner">
+                          <form class="doc-form" role="search">
+                            <div class="form-group">
+                              <input type="text" class="form-control add-doc" placeholder="https://docviewer.yandex.ru/?url=ya-disk-public%3A%2F">
+                            </div>
+                          </form>
+                          <div class="share-wrap">
+                            <button class="btn share">Поделиться</button>
+                          </div>
+                        </div>                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-favorite-order">Оформить заказ</button>
+            </div>
+            <div class="cabinet-favorite-wrap">
+              <div class="col-sm-4 cabinet-favorite-item">
+                <a href=""><h3>Лондон</h3></a>
+                <a href=""><img src="img/london.png"></a>
+                <div class="catalog-describe">
+                  <div class="col-sm-6 col-xs-6 catalog-describe-item">
+                    <p>Город, закат, здания</p>
+                    <p>от <a href="#">nickname</a></p>
+                  </div>
+                  <div class="col-sm-6 col-xs-6 catalog-describe-item">
+                    <p class="price">6000 ₽</p>
+                  </div>
+                  <div style="display:none;">
+                    <div class="fancy-data" id="data">
+                      <img src="img/city-night-big.png">
+                      <div class="fancy-data-describe">
+                        <div class="fancy-data-describe-inner">
+                          <div class="fancy-data-social">
+                            <a href="#"><img src="img/vk.png"></a>
+                            <a href="#"><img src="img/facebook.png"></a>
+                            <a href="#"><img src="img/google.png"></a>
+                          </div>
+                          <div class="fancy-data-btn">
+                            <button class="btn">В избранное</button>
+                            <button class="btn">Заказать</button>
+                          </div>
+                        </div>
+                        <div class="fancy-data-describe-inner">
+                          <form class="doc-form" role="search">
+                            <div class="form-group">
+                              <input type="text" class="form-control add-doc" placeholder="https://docviewer.yandex.ru/?url=ya-disk-public%3A%2F">
+                            </div>
+                          </form>
+                          <div class="share-wrap">
+                            <button class="btn share">Поделиться</button>
+                          </div>
+                        </div>                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-favorite-order">Оформить заказ</button>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="address" role="tabpanel">
+          <div class="address">
+            <table class="table table-address">
+            <h3>Адрес доставки</h3>
+              <tbody>
+                <tr>
+                  <td>Имя получателя:</td>
+                  <td>Александр </td>
+                </tr>
+                <tr>
+                  <td>E-mail:</td>
+                  <td>alex0@mail.ru</td>
+                </tr>
+                <tr>
+                  <td>Город:</td>
+                  <td>Москва</td>
+                </tr>
+                <tr>
+                  <td>Улица, дом, кв.:</td>
+                  <td>ул. Беспалова, 24</td>
+                </tr>
+                <tr>
+                  <td>Индекс:</td>
+                  <td>ХХ-ХХ-ХХ</td>
+                </tr>
+                <tr>
+                  <td>Телефон:</td>
+                  <td>+7 (952) 00-00-01</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-address">Изменить профиль</button>
+          </div>
+        </div>
+      </div>
+    </div>      
+    <div class="tab-pane tab-pane-cabinet" role="tabpanel" id="myprofile">
+      <div class="col-md-3 col-sm-3 sidebar-cabinet">
+          <!-- Vertical menu -->
+          <ul class="nav-tabs nav-stacked nav cabinet-menu">
+            <li class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Личная информация</a></li>
+            <li><a href="#company" aria-controls="company" role="tab" data-toggle="tab">Для юридических лиц</a></li>
+            <li><a href="#safe" aria-controls="safe" role="tab" data-toggle="tab">Настройки безопасности</a></li>
+          </ul>
+          <ul class="nav-pills nav-stacked nav cabinet-catalog-menu">
+              <li class="active">
+                  <a data-toggle="collapse" data-target="#accordion">Фотообои</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Футболки</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Картины</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a data-toggle="collapse" data-target="#accordion">Постеры</a>
+                  <ul id="accordion" class="collapse accordion-collapse">
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Абстракции</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Авто-, мото-, транспорт</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Архитектура</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Города</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Граффити</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Детские</a>
+                      </li>
+                      <li>
+                          <a class="accordion-inner" href="#" tabindex="-1">Для подростков</a>
+                      </li>
+                  </ul>
+              </li>                     
+          </ul>    
+      </div>
+      <div class="col-md-9 col-sm-9 tab-content cabinet-body">
+        <div class="tab-pane fade in active profile" id="profile">
+          <h3>Личная информация</h3>
+          <div class="profile-photo">
+            <img src="img/photo-empty.png">
+            <button class="btn load-photo">Загрузить фото</button>
+            <p class="note">не более 5 мб</p>          
+          </div>
+          <form>
+            <input type="text" class="form-order-item with-note" name="order-item" placeholder="Имя получателя">
+            <div class="form-group">
+              <input type="radio" id="radio-m" name="radio-m" value="radio-m">
+              <label class="radio-role" for="radio-m"><span></span>мужчина</label>
+              <input type="radio" id="radio-w" name="radio-w" value="radio-w">
+              <label class="radio-role" for="radio-w"><span></span>женщина</label>
+            </div>
+            <select class="select-order">
+                <option>Страна/Регион</option>
+                <option>РФ</option>
+            </select>
+            <select class="select-order">
+                <option>Город</option>
+                <option>Москва</option>
+            </select>
+            <input type="text" class="form-order-item" name="order-item" placeholder="Улица, дом, квартира">
+            <input type="text" class="form-order-item with-note" name="order-item" placeholder="Почтовый индекс">
+            <div class="form-group">                
+                <input type="checkbox" id="check-order" name="check-order" value="check-order">
+                <label class="check-order" for="check-order"><span></span>В моём адресе нет почтового кода.</label>
+            </div>
+            <input type="text" class="form-order-item" name="order-item" placeholder="Мобильный телефон"><br>
+            <button class="btn order-btn">Сохранить</button>
+         </form>              
+        </div>
+        <div class="tab-pane fade company" id="company">
+          <h3>Для юридичестких лиц</h3>         
+          <form>
+            <input type="text" class="form-order-item" name="order-item" placeholder="ИИН*"> 
+            <input type="text" class="form-order-item" name="order-item" placeholder="КПП*">
+            <input type="text" class="form-order-item" name="order-item" placeholder="Название*">
+            <input type="text" class="form-order-item" name="order-item" placeholder="Официальное название для печати*">
+            <input type="text" class="form-order-item" name="order-item" placeholder="Почтовый адрес">
+            <input type="text" class="form-order-item" name="order-item" placeholder="Название банка">
+            <input type="text" class="form-order-item" name="order-item" placeholder="Телефон">
+            <button class="btn order-btn">Сохранить</button>
+            <p class="message">На номер  + 7 (978) 999 99 99  Вам было отправлено<br> SMS с кодом подтверждения </p>
+            <div class="apply">
+              <button class="btn order-btn">Подтвердить</button>
+              <a href=""><p class="sms">Не получили SMS ? </p></a>
+            </div>
+         </form>              
+        </div>
+        <div class="tab-pane fade safe" id="safe">
+          <h3>Настройки безопасности</h3>         
+          <form>
+            <div class="form-group">
+              <label for="change-post">Изменить почту:</label>
+              <input type="text" id="change-post" class="form-order-item" name="order-item" placeholder="Введите нынешний E-mail адрес">
+              <button class="btn order-btn">Получить код</button> 
+              <input type="text" class="form-order-item" name="order-item" placeholder="ХX-XX-XX">
+              <button class="btn order-btn">Изменить адрес</button>
+            </div>
+            <div class="form-group">
+              <label for="change-pass">Изменить пароль:</label> 
+              <input type="text" id="change-pass" class="form-order-item" name="order-item" placeholder="Старый пароль">
+              <input type="text" id="change-pass" class="form-order-item" name="order-item" placeholder="Новый пароль">
+              <button class="btn order-btn">Изменить пароль</button>
+            </div>
+         </form>              
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+<footer>
+  <div class="container-fluid footer-catalog-wrap">
+    <div class="container footer-catalog">
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Фотообои</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов по направлению</p></a>
+        <a href="#"><p>Специалисты-поклейщики</p></a>
+      </div>      
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Карты и постеры</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+        <a href="#"><p>Каталог подрамников</p></a>
+        <a href="#"><p>Каталог рам</p></a>
+        <a href="#"><p>Варианты натяжки</p></a>
+      </div>
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Фрески</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+        <a href="#"><p>Специалисты-поклейщики</p></a>
+      </div>
+      <div class="col-sm-3 col-xs-6 footer-catalog-item">
+        <h3>Сувениры</h3>
+        <a href="#"><p>Каталог дизайнов по направлению</p></a>
+        <a href="#"><p>Каталог материалов для печати</p></a>
+      </div>
+      <div class="col-sm-9 col-xs-12 footer-catalog-item">
+        <h3>Футболки</h3>
+        <div class="col-sm-4 col-xs-4 t-shirt">
+          <a href="#"><p>Каталог дизайнов по направлению</p></a>
+          <a href="#"><p>Каталог одежды</p></a>
+          <a href="#"><p>Мужские футболки</p></a>
+          <a href="#"><p>Женские футболки</p></a>
+        </div>
+        <div class="col-sm-4 col-xs-4 t-shirt t-shirt-2">
+          <a href="#"><p>Футболки с полной запечаткой</p></a>
+          <a href="#"><p>Свитшоты</p></a>
+          <a href="#"><p>Мужские поло</p></a>
+          <a href="#"><p>Женские поло</p></a>
+        </div>
+        <div class="col-sm-4 col-xs-4 t-shirt t-shirt-3">
+          <a href="#"><p>Головные уборы</p></a>
+          <a href="#"><p>Толстовки</p></a>
+          <a href="#"><p>Лонгсливы</p></a>
+          <a href="#"><p>Майки</p></a>
+        </div>
+      </div>      
+      <div class="col-sm-3 col-xs-12 footer-catalog-item">
+        <h3>Для бизнеса</h3>
+        <a href="#"><h3>Баннеры</h3></a>
+        <a href="#"><h3>Плакаты</h3></a>
+        <a href="#"><h3>Афиши</h3></a>
+        <a href="#"><h3>Визитки</h3></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid footer-info-wrap">
+    <div class="container footer-info">
+      <div class="col-sm-5 footer-info-item">
+        <h5>Доставка</h5>
+        <p>Доставка: Москва, Санкт-Петербург, Новосибирск, Екатеринбург, Нижний Новгород, Казань, Самара, Челябинск, Омск, Ростов-на-Дону, Уфа, Красноярск, Пермь, Волгоград, Воронеж.</p>
+        <div class="social">
+          <a href="#"><img src="img/vk.png"></a>
+          <a href="#"><img src="img/facebook.png"></a>
+          <a href="#"><img src="img/ok.png"></a>
+          <a href="#"><img src="img/twitter.png"></a>
+          <a href="#"><img src="img/google.png"></a>
+        </div>
+        <div class="line-grey"></div>
+      </div>
+      <div class="col-sm-3 footer-info-item">
+        <h5>Контакты</h5>
+        <p>Адрес местонахождения:  г.Выборг,<br> ул. Первомайская, д.7<br>
+        (81378) 2-81-33</p>
+        <a href="mailto:makton@mail.ru">makton@mail.ru</a>
+      </div>
+      <div class="col-sm-4 footer-info-item">
+        <form class="subs-form">
+          <div class="form-group">
+            <input type="text" class="form-control subs" placeholder="Введите вашу эл.почту">
+          </div>
+          <a href="№"><img src="img/subs.png" alt="#"></a>
+        </form>
+        <div class="subs-sign">
+          <p>Получайте обновления любимого<br>магазина или товара!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <ul class="footer-menu">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Обмен и возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Авторские права</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 payments">
+          <img src="img/visa.png">
+          <img src="img/mastercard.png">
+          <img src="img/yandex-dengi.png">
+          <img src="img/wmlogo.png">
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+  <div class="container-fluid footer-bottom-wrap">
+    <div class="container footer-bottom">
+      <div class="col-sm-4">
+        <a href="#"><img src="img/logo-footer.png"></a>
+      </div>
+      <div class="col-sm-4">
+        <p>© 2016 Интернет-магазин фотообоев Granprint.ru</p>
+      </div>
+      <div class="col-sm-4">
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript"> 
+  $(document).ready(function() { 
+    $('a.fancy').fancybox(); 
+  }); 
+</script> 
+<!-- Modals-->
+
+</body>
